@@ -19,15 +19,16 @@ class SignIn extends Component {
   }
   render() {
     const { authError, auth } = this.props;
-    if (auth.uid) return <Redirect to='/' />
+    if (auth.uid) return <Redirect to='/myprofile' />
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h5>Sign In</h5>
+      <div className="SignUp">
+        <form className="form" onSubmit={this.handleSubmit}>
+          <h1>Sign In</h1>
           <div>
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
           </div>
+
           <div>
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={this.handleChange} />
