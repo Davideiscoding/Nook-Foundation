@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signUp } from '../../store/actions/authActions'
+import Oauth from '../auth/oauth';
 
 class SignUp extends Component {
   state = {
@@ -23,24 +24,20 @@ class SignUp extends Component {
     const { auth, authError } = this.props;
     if (auth.uid) return <Redirect to='/' />
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h5>Sign Up</h5>
+      <div className="SignUp">
+        <form className="form" onSubmit={this.handleSubmit}>
+          <h1>Sign Up</h1>
           <div>
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
           </div>
           <div>
+            <label htmlFor="username">Username</label>
+            <input type="username" id='username' onChange={this.handleChange} />
+          </div>
+          <div>
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={this.handleChange} />
-          </div>
-          <div>
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" id='firstName' onChange={this.handleChange} />
-          </div>
-          <div>
-            <label htmlFor="lastName">Last Name</label>
-            <input type="text" id='lastName' onChange={this.handleChange} />
           </div>
           <div>
             <button>Sign Up</button>
@@ -48,6 +45,9 @@ class SignUp extends Component {
               { authError ? <p>{authError}</p> : null }
             </div>
           </div>
+            <div>
+              <button className="discordbutton" onClick={() => window.open(Oauth.discordLoginUrl)}>Sign Up with Discord!</button>
+            </div>
         </form>
       </div>
     )
