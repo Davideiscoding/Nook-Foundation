@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Sniglet:wght@400&display=swap');
+
+/**************************REMOVE ANY DRY CODE LATER*********************************************/
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  font-family: "Sniglet", sans-serif;
 }
 /* HEADING START */
 li, a, button, h1 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.1em;
   color: #edf0f1;
   text-decoration: none;
 }
@@ -39,6 +41,11 @@ h1 {
   color: white;
 }
 
+.logo h1 {
+  margin: 0;
+}
+
+
 .nav_links {
   list-style: none;
 }
@@ -65,70 +72,189 @@ button {
   margin-left: 20px;
 }
 
+.discordbutton{
+  background-color: purple; 
+}
+
 button:hover {
   background-color: rgba(0,136,169,0.8);
 }
 
-/* HEADING DONE */
-
 img {
   width: 75px;
 }
+/* HEADING DONE */
 
+/* HOMEPAGE BODY START */
 .homepage-top {
-  text-align: center;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #A8D0E6;
 }
 
-.homepage-top h1 {
+.welcome {
+  width: 50%;
+}
+
+.homepage-top h1, h3 {
   margin-top: 100px;
   color: black;
+  text-align: center;
 }
+
 
 #nook{
   width: 200px;
 }
 
-
 /***********************************************************************/
-/***********************************************************************/
-/***********************************************************************/
-/***********************************************************************/
+/**************************NEW SECTION**********************************/
 /***********************************************************************/
 
+ul {
+  list-style-type: none;
+}
 
-.App {
-  font-family: sans-serif;
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #A8D0E6;
+}
+
+.box {
+  margin: 100px;
+  padding: 10px;
+  background-color: #F8E9A1;
+  border-radius: 10px;
+}
+
+.box h2 {
+   margin-bottom: 50px;
+   color: black;
+   font-size: 1.7em;
+}
+
+.box li {
+    margin: 10px;
+    text-align: left;
+    margin-left: 0;
+    color: black;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+span {
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.box h3 {
+  color: black;
+  margin-top: 50px;
   text-align: center;
 }
 
-h1 {
-  margin: 0 0 25px 0;
-  text-align: left;
+.box a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+/***********************************************************************/
+/***********************************************************************/
+/**************************SIGNUP/LOGIN START*********************************/
+/***********************************************************************/
+/***********************************************************************/
+
+
+.SignUp {
+  text-align: center;
+}
+
+.SignUp h1{
+  font-size: 3em;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 500px;
+  color: #F90;
+  text-align: center;
+}
+
+.form {
+  height: 100%;
+  background-color: #98d4f3;
+  position: relative;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: white;
+  position: relative;
+  padding-bottom: 80px;
 }
 
-input {
-  max-width: 450px;
-  width: auto;
+form div {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: left;
+}
+
+
+input, textarea {
+  width: 500px;
   border: none;
-  margin: 0 0 25px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 20px;
+  outline: none;
   padding: 10px;
+  font-size: 1em;
+  color: #676767;
+  margin-top: 10px;
+}
+
+input:focus, textarea:focus {
+  border: solid 3px #77bde0;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  overflow: auto;
 }
 
 button {
-  width: 125px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border: none;
-  padding: 7px;
-  text-align: center;
+  background-color: #F90;
+  color: white;
+  height: 50px;
   cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.29em;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0;
 }
+
+label {
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+
+button:hover {
+  background-color: #e58f0e;
+}
+
+form p {
+  margin-top: 50px;
+  font-size: 1.3em;
+  text-align: center;
+  color: red;
+}
+
+/***********************************************************************/
+/**************************SIGNUP/LOGIN END*********************************/
+/***********************************************************************/
