@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Sniglet:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
 
 /**************************REMOVE ANY DRY CODE LATER*********************************************/
 
@@ -7,8 +10,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Sniglet", sans-serif;
+  font-family: "Baloo 2", sans-serif;
 }
+
+
+
 /* HEADING START */
 li, a, button, h1 {
   font-weight: 500;
@@ -73,7 +79,7 @@ button {
 }
 
 .discordbutton{
-  background-color: purple; 
+  background-color: #7289DA;
 }
 
 button:hover {
@@ -86,24 +92,70 @@ img {
 /* HEADING DONE */
 
 /* HOMEPAGE BODY START */
-.homepage-top {
+
+
+.sampleBackground {
+      overflow: hidden;
+      position: relative;
+      line-height: 0;
+
+      background-color: black;
+    height: 100%;
+    left: 0;
+
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+video {
+width: 100%;
+height: 600px;
+object-fit: cover;
+z-index: 0;
+opacity: .50;
+}
+
+
+/* .homepage-top {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #A8D0E6;
+} */
+
+.content {
+  position: absolute;
+left: 50%;
+top: 50%;
+z-index: 2;
+transform: translate(-50%, -50%);
+}
+
+.content h1 {
+  color: white;
+  font-size: 5em;
+  font-weight: 800;
+}
+
+.content h3 {
+  color: pink;
+  padding-top: 70px;
+  text-align: center;
+  font-size: 1.4em;
 }
 
 .welcome {
   width: 50%;
 }
 
-.homepage-top h1, h3 {
+/* .homepage-top h1, h3 {
   margin-top: 100px;
   color: black;
   text-align: center;
-}
+} */
 
 
 #nook{
@@ -114,13 +166,15 @@ img {
 /**************************NEW SECTION**********************************/
 /***********************************************************************/
 
-ul {
+/* ul {
   list-style-type: none;
 }
 
 .container {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   background-color: #A8D0E6;
 }
@@ -129,20 +183,38 @@ ul {
   margin: 100px;
   padding: 10px;
   background-color: #F8E9A1;
+
   border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid red;
+
+}
+
+.card img {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .box h2 {
    margin-bottom: 50px;
-   color: black;
-   font-size: 1.7em;
+   color: white;
+   font-size: 4.5em;
 }
 
 .box li {
     margin: 10px;
-    text-align: left;
+    text-align: center;
     margin-left: 0;
-    color: black;
+    color: white;
     font-size: 1.2em;
     margin-top: 25px;
 }
@@ -150,10 +222,11 @@ ul {
 span {
   font-size: 1.2em;
   margin-right: 15px;
+  text-align: center;
 }
 
 .box h3 {
-  color: black;
+  color: white;
   margin-top: 50px;
   text-align: center;
 }
@@ -161,7 +234,502 @@ span {
 .box a {
   color: black;
   text-decoration: underline;
+} */
+
+.covid-19{
+  display: flex;
+  justify-content: center;
 }
+
+.covid-19 img {
+width: 15%;
+}
+
+.covid-text{
+  margin-top: 2.5%;
+}
+
+.covid-19 h1, .covid-19 h2, .covid-19 a{
+  color: black;
+  margin: 10px;
+}
+
+.covid-19 h2 {
+  font-size: 1.2em;
+}
+
+.covid-19 a {
+  text-align: right;
+  color: blue;
+}
+
+.mission {
+  margin-top: 100px;
+}
+
+.mission h6{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.divider-heading {
+  margin: 10px auto 3%;
+  width: 25%;
+}
+
+.divider-heading span {
+  border-color: #b7b7b7;
+}
+
+.divider {
+  line-height: 1;
+
+}
+
+.divider-line {
+  border-top: 1px solid #70b6bc;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 15px);
+}
+
+.divider-arrow {
+  border: 1px solid #70b6bc;
+  display: inline-block;
+  height: 15px;
+  margin: -7px 2px 0;
+  transform: rotate(138deg) skewX(20deg) skewY(20deg);
+  vertical-align: top;
+  width: 15px;
+}
+
+.divider-down {
+  border-bottom: 0;
+  border-left: 0;
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/*******************************MISSION*********************************/
+/***********************************************************************/
+/***********************************************************************/
+
+
+
+/******************************************************************************/
+/***************************MISSION SPECS START********************************/
+/******************************************************************************/
+.mission {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 50%;
+  margin-bottom: 65px;
+}
+
+
+.mission-content:last-child {
+  margin-bottom: 0;
+}
+
+.mission-content {
+  zoom: 1;
+  overflow: hidden;
+  padding: 13% 0;
+  position: relative;
+
+}
+
+.mission-content::after, .mission-content::before {
+  content: '';
+  display: table;
+
+}
+
+article {
+  display: block;
+}
+
+
+.circle-background {
+  background-color: #41B3A3;
+  border-radius: 50%;
+  left: 0;
+  opacity: .20;
+  padding-top: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.mission-content-title-holder h2 {
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 4%;
+  font-size: 2em;
+}
+
+.mission-content-title-holder h2, .mission-content-title-holder h4 {
+  text-transform: uppercase;
+
+}
+
+.mission-content-title-holder h4 {
+  line-height: .88;
+  padding-bottom: .3%;
+  margin-right: 10%;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.mission-content-title-animation img {
+  float: right;
+  position: relative;
+  width: 70%;
+  margin-bottom: 200px;
+}
+
+.content-text {
+  position: relative;
+  padding-top: 3.5%;
+  width: 70%;
+
+  font-size: 1.5em;
+}
+/******************************************************************************/
+/***************************MISSION SPECS END**********************************/
+/******************************************************************************/
+
+/******************************************************************************/
+/***************************JUDY START*****************************************/
+/******************************************************************************/
+.circle-background-judy{
+  background-color: #EB2188;
+}
+
+
+.mission-content-title-animation-judy img {
+  float: left;
+}
+
+.mission-content-title-animation-judy {
+  margin-top: -15%;
+}
+
+
+.mission-content-title-holder-judy h4{
+  text-align: right;
+  margin-right: 0;
+}
+
+.mission-content-title-holder-judy h4 {
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+.content-text-judy {
+  text-align: right;
+  float: right;
+}
+
+/******************************************************************************/
+/***************************JUDY END*******************************************/
+/******************************************************************************/
+
+
+
+/******************************************************************************/
+/**************************SHIBA START*****************************************/
+/******************************************************************************/
+.circle-background-shiba{
+  background-color: #EC4D37;
+}
+
+
+.mission-content-title-animation-shiba img {
+  float: right;
+  width: 80%;
+}
+
+.mission-content-title-animation-shiba {
+  margin-top: -15%;
+}
+
+
+.mission-content-title-holder-shiba h4{
+  text-align: left;
+  margin-right: 0;
+}
+
+.mission-content-title-holder-shiba h4 {
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+.content-text-shiba {
+  text-align: left;
+  float: left;
+}
+
+/******************************************************************************/
+/**************************SHIBA END*******************************************/
+/******************************************************************************/
+
+
+/******************************************************************************/
+/**************************KK START********************************************/
+/******************************************************************************/
+.circle-background-kk{
+  background-color: #EC8B5E;
+}
+
+
+.mission-content-title-animation-kk img {
+  float: left;
+  width: 80%;
+}
+
+.mission-content-title-animation-kk {
+  margin-top: -15%;
+}
+
+
+.mission-content-title-holder-kk h4{
+  text-align: right;
+  margin-right: 0;
+}
+
+.mission-content-title-holder-kk h4 {
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+.content-text-kk {
+  text-align: right;
+  float: right;
+}
+
+.mission-content-title-holder .discordbutton {
+  width: 20%;
+  margin-left: 50%;
+  margin-bottom: 5%;
+  float: right;
+}
+
+/******************************************************************************/
+/**************************KK END**********************************************/
+/******************************************************************************/
+
+
+/************************************************  *********************************/
+/************************************************  *********************************/
+/************************************************  *********************************/
+/************************************************  *********************************/
+
+
+/******************************************************************************/
+/**************************SUPPORT START***************************************/
+/******************************************************************************/
+
+.support{
+  margin-top: 250px;
+  width: 100%;
+}
+
+.support h2 {
+  font-size: 3em;
+}
+
+.support p {
+  font-size: 1.5em;
+}
+
+.support h2, .support p {
+  margin: 5%;
+}
+
+.donate {
+  width: 50%;
+  zoom: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.donate-background{
+  left: 0;
+  opacity: .20;
+  padding-top: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: #E7D045;
+}
+
+.raddle {
+  width: 20%;
+  margin-left: 25%;
+}
+
+.donate a{
+  color: black;
+  font-size: 1.8em;
+  font-weight: 900;
+  float: right;
+  margin-right: 35%;
+  margin-top: 5%;
+  border: 5px solid #E7D045;
+  border-radius: 25px;
+  padding: 10px;
+}
+/******************************************************************************/
+/**************************SUPPORT END*****************************************/
+/******************************************************************************/
+
+/******************************************************************************/
+/**************************GIVEAWAY START**************************************/
+/******************************************************************************/
+
+.giveaway {
+  float: right;
+  width: 50%;
+  zoom: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.giveaway-background{
+  left: 0;
+  opacity: .20;
+  padding-top: 100%;
+  position: absolute;
+  top: 0;
+  width:100%;
+  z-index: -1;
+  background-color: green;
+}
+
+.mystery-giveaway {
+  width: 35%;
+  margin-left: 10%;
+}
+
+/******************************************************************************/
+/**************************GIVEAWAY END****************************************/
+/******************************************************************************/
+
+
+/******************************************************************************/
+/**************************DODO START******************************************/
+/******************************************************************************/
+
+.dodo-code {
+  width: 50%;
+  margin-top: 850px;
+  zoom: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.dodo-code-background{
+  left: 0;
+  opacity: .20;
+  padding-top: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: #E23F48;
+}
+
+
+.dodo-code input, .dodo-code button {
+  border: 5px solid #E23F48;
+  width: 140px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  margin: 2.5%;
+  text-align: center;
+  float: right;
+  margin-top: 15%;
+  margin-right: 30%;
+  margin-left: -25%;
+}
+
+.dodo-code button {
+  background-color: white;
+  color: black;
+}
+
+
+.dodo {
+  margin-left: 5%;
+  width: 35%;
+}
+
+/******************************************************************************/
+/**************************DODO END********************************************/
+/******************************************************************************/
+
+
+/***********************************************************************/
+/***********************************************************************/
+/**************************FOOTER START*********************************/
+/***********************************************************************/
+/***********************************************************************/
+.footer {
+  margin-top: 5%;
+  display: flex;
+  justify-content:space-around;
+  padding: 140px;
+  background-color: #FD8CA8;
+}
+
+.footer-left h2, .footer-center h2, .footer-right h2 {
+  margin-bottom: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  width: 350px;
+}
+
+.footer-center h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-center button {
+
+  background-color: #E7D045;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.footer-center p {
+  margin-bottom: 50px;
+}
+
+.footer-right {
+  list-style: none;
+}
+
+.footer-right a{
+  color: black;
+}
+
+.footer-bottom {
+  position: absolute;
+  padding-top: 475px;
+
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/**************************FOOTER END**********************************/
+/***********************************************************************/
+/***********************************************************************/
 
 
 /***********************************************************************/
@@ -258,3 +826,217 @@ form p {
 /***********************************************************************/
 /**************************SIGNUP/LOGIN END*********************************/
 /***********************************************************************/
+
+
+
+/***********************************************************************/
+/**************************MEDIA QUERIES*********************************/
+/***********************************************************************/
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+  .heading {
+    justify-content: space-around;
+    padding: 15px 5%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .logo h1 {
+    margin: 10px;
+
+}
+  video {
+  height: 500px;
+  }
+
+  .content {
+  left: 20%;
+  top: 35%;
+  transform: translate(-10%, -10%);
+  }
+
+  .content h1 {
+    font-size: 1.3em;
+  }
+
+  .content h3 {
+    font-size: 0.8em;
+  }
+
+  .covid-19 img {
+  width: 30%;
+  margin-top: 8.5%;
+  }
+
+  .covid-text{
+    margin-top: 8.5%;
+  }
+
+  .covid-19 h1, .covid-19 h2, .covid-19 a{
+    font-size: 1.2em;
+  }
+
+  .covid-19 h2 {
+    font-size: 1em;
+  }
+
+  .covid-19 a {
+    font-size: 1em;
+  }
+
+  .mission {
+    margin-top: 100px;
+  }
+
+  .mission h6{
+    font-size: 0.8em;
+  }
+
+  .divider-heading {
+    margin: 10px auto 5%;
+    width: 50%;
+  }
+
+  article {
+    display: block;
+  }
+
+  .circle-background {
+    background-color: #41B3A3;
+    border-radius: 50%;
+    left: 0;
+    opacity: .20;
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .circle-background-daisy{
+    background-color: #EB2188;
+  }
+
+  .circle-background-tommy{
+    background-color: #EC4D37;
+  }
+
+  .circle-background-saharah{
+    background-color: #EC8B5E;
+  }
+
+  .orville {
+    float: right;
+    width: 30%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 15%;
+    margin-top: -10%;
+
+  }
+
+  .daisy {
+    width: 30%;
+    position: relative;
+    z-index: 2;
+    margin-top: -10%;
+
+  }
+
+  .tommy {
+    width: 40%;
+    margin-top: -10%;
+  }
+
+  .saharah {
+    width: 30%;
+    margin-top: -10%;
+  }
+
+  .mission-content-title-holder h2 {
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 4%;
+    font-size: 1em;
+  }
+
+  .mission-content-title-holder h4 {
+    line-height: .95;
+    padding-bottom: .3%;
+    border-bottom: none;
+    font-size: 1.2em;
+  }
+
+  .mission-content-title-animation img {
+    display: block;
+    float: left;
+    position: relative;
+    width: 75%;
+    margin-top: -20%;
+  }
+
+  .mission-content-title-animation-right img {
+    float: right;
+    margin-top: 5%;
+    margin-right: -2%;
+  }
+
+  .mission-content-title-animation-right {
+    margin-top: -40%;
+  }
+
+
+  .mission-content-title-holder-right h2, .mission-content-title-holder-right h4{
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .mission-content-title-holder-right h2 {
+    margin-bottom: 25%;
+  }
+
+  .mission-content-title-holder-right h4 {
+    margin-right: 0;
+  }
+
+  .border-purple h4 {
+    border-bottom: none;
+  }
+
+  .border-pink h4 {
+    border-bottom: none;
+  }
+
+  .border-yellow h4 {
+    border-bottom: none;
+  }
+
+  .mission-content-title-holder .discordbutton {
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    font-size: 1em;
+  }
+
+  .mission-content-title-holder-daisy h4 {
+    margin-left: 25%;
+  }
+
+  .content-text {
+    left: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 3.2%;
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .content-text-right {
+    float: right;
+  }
+
+
+}
